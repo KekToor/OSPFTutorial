@@ -138,4 +138,18 @@ Pak nastavíme SSH:
   transport input ssh
 ```
 
+**Nakonec nezapomeňte na každém routeru uložit konfiguraci**
+
+```
+  ena
+  write
+  (případně CTRL+C a Enter, pak write pokud jste v config režimu)
+```
+
+# **Poznámky**
+
+> **Pokud si kdykoliv potřebujete zkontrolovat jestli vám funguje OSPF, stačí zadat** `do sh ip ospf nei`
+> 
+> **Pokud chcete zjistit, zda jsou sítě správně naroutované, použijte** `do sh ip route`
+
 # **A je hotovo! Díky za pozornost!**
