@@ -26,6 +26,7 @@ Pomocí blesku propojíme kabely
 **2) Nastavování IP adres**
 
 Dle zadání nastavujeme IP adresy na routerech
+
 Postupujeme tímto způsobem:
 ```
   ena
@@ -37,9 +38,27 @@ Postupujeme tímto způsobem:
 **Poslední 2 příkazy zopakujeme pro každý interface, přes které jsou prvky propojeny**
 > IP Cheat Sheet **ZDE:** [Cheat Sheet](https://www.freecodecamp.org/news/subnet-cheat-sheet-24-subnet-mask-30-26-27-29-and-other-ip-address-cidr-network-references/)
 > 
-> Kalkulačka IP adres **ZDE:** [Kalkulačka](https://www.calculator.net/ip-subnet-calculator.html) (můžete použít jakoukoliv z **Usable IP adresses**
+> Kalkulačka IP adres **ZDE:** [Kalkulačka](https://www.calculator.net/ip-subnet-calculator.html) (můžete použít jakoukoliv z **Usable IP adresses**)
 
 **Nastavení Serveru/počítače a s ním souvisejícího routeru:**
 
 ![Nastavení PC](./img/img2.png)
 ![Nastavení Routeru](./img/img3.png)
+
+**3) Nastavování OSPF**
+
+Na každém routeru se pomocí příkazu `network` ujistíme, že router zná všechny sítě, se kterými sousedí - jedinou výjimkou je propojení **Router-Server**, to do OSPF nepřidáváme
+
+Postupujeme tímto způsobem:
+```
+  router ospf 1
+  network (Network adresa sítě - první adresa) (opačná maska sítě - wildcard mask) area 0
+```
+
+**Ukázka:**
+
+![Nastavení OSPF](./img/img4.png)
+
+
+
+
