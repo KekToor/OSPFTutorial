@@ -42,8 +42,16 @@ Postupujeme tímto způsobem:
 
 **Nastavení Serveru/počítače a s ním souvisejícího routeru:**
 
+**Server**
+
 ![Nastavení Serveru](./img/img2.png)
+
+**Router**
+
 ![Nastavení Routeru](./img/img3.png)
+
+**PC**
+
 ![Nastavení PC](./img/img5.png)
 
 **3) Nastavování OSPF**
