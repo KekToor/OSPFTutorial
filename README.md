@@ -42,8 +42,9 @@ Postupujeme tímto způsobem:
 
 **Nastavení Serveru/počítače a s ním souvisejícího routeru:**
 
-![Nastavení PC](./img/img2.png)
+![Nastavení Serveru](./img/img2.png)
 ![Nastavení Routeru](./img/img3.png)
+![Nastavení PC](./img/img5.png)
 
 **3) Nastavování OSPF**
 
@@ -59,10 +60,44 @@ Postupujeme tímto způsobem:
 
 ![Nastavení OSPF](./img/img4.png)
 
+Pak přejdeme na Router0 a nastavíme **default gateway**
+
+```
+  ip route 0.0.0.0 0.0.0.0 (2x 0.0.0.0 určuje že se bude jednat o default gateway) 213.155.225.1 (adresa serveru)
+  default-information originate
+```
+
+Toto nastaví default gateway všem routerům
+
 **4) Pasivní rozhraní**
 
-Stačí pouze vlézt na router připojený k pc, přejít na interface propojený s 
+Stačí pouze vlézt na router připojený k pc a zadat příkazy:
 
+```
+  router ospf 1
+  passive-interface e0/0/0 (případně e0/1/0)
+```
+
+**5) Nastavení NAT na řídícím routeru**
+
+První nastavíme na routeru který interfaces jsou vnitřní a vnější (vnější = tam kde je internet, vnitřní = tam kde je naše síť)
+
+```
+  int f0/0
+  ip nat inside
+  int f0/1
+  ip nat inside
+  int e0/0/0 (případně int e0/1/0)
+  ip nat outside
+```
+
+Pak určíme, které IP adresy může používat (*první příkaz*) a povolíme jejich využití v NATU (*druhý příkaz*), v tomto případě povolujeme síť **10.0.0.0** s wildcard maskou **0.0.0.255**
+
+
+```
+  access-list 1 permit 10.0.0.0(network adresa sítě) 0.0.0.255(opačná (wildcard) maska sítě - v tomto případě pro 256 IP adres, A.K.A /24)
+  ip nat inside source list int e0/0/0
+```
 
 
 
