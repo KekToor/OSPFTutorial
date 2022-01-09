@@ -59,6 +59,10 @@ Postupujeme tímto způsobem:
 
 ![Nastavení OSPF](./img/img4.png)
 
+**4) Pasivní rozhraní**
+
+Stačí pouze vlézt na router připojený k pc, přejít na interface propojený s 
+
 
 
 
