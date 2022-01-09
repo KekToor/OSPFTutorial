@@ -36,5 +36,5 @@ Postupujeme tímto způsobem:
 
 **Nastavení Serveru/počítače a s ním souvisejícího routeru:**
 
-[Nastavení PC](./img/img2.png)
-[Nastavení Routeru](./img/img3.png)
+![Nastavení PC](./img/img2.png)
+![Nastavení Routeru](./img/img3.png)
