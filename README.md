@@ -6,4 +6,4 @@
 
 **2)** Nastav routerům IP adresu, serveru a PC pak ***default gateway***
 
-> **Default Gateway** = IP adresa, která je přiřazená portu, kterým PC zapojujete do routeru, většinou tedy `Eth0/0/0 nebo Eth0/1/0`
+> **Default Gateway** = IP adresa, která je přiřazená portu, kterým PC zapojujete do routeru, většinou tedy `**Eth0/0/0**` nebo `**Eth0/1/0**`
