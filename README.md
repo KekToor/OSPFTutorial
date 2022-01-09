@@ -55,7 +55,7 @@ Postupujeme tímto způsobem:
   network (Network adresa sítě - první adresa) (opačná maska sítě - wildcard mask) area 0
 ```
 
-**Ukázka:**
+**Ukázka (platí pro Router0):**
 
 ![Nastavení OSPF](./img/img4.png)
 
