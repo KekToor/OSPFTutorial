@@ -21,6 +21,7 @@
 **1) Pokládání routerů**
 Položíme routery **1841**, do routerů na obrázku popsaných jako **Router0 a Router2** připojíme modul `WIC-1-ENET` - Tím pak připojíme routery ke zbytku sítě
 Pomocí blesku propojíme kabely
+
 **2) Nastavování IP adres**
 Dle zadání nastavujeme IP adresy na routerech
 Postupujeme tímto způsobem:
