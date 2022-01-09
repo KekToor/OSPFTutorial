@@ -151,5 +151,7 @@ Pak nastavíme SSH:
 > **Pokud si kdykoliv potřebujete zkontrolovat jestli vám funguje OSPF, stačí zadat** `do sh ip ospf nei`
 > 
 > **Pokud chcete zjistit, zda jsou sítě správně naroutované, použijte** `do sh ip route`
+>
+> **Stejné nastavení funguje i pro 4 routery**
 
 # **A je hotovo! Díky za pozornost!**
