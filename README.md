@@ -17,7 +17,7 @@
 **5)** Na routeru vedoucím do serveru nastavíme NAT
 
 **6)** Na routeru vedoucím do serveru nastavíme SSH, zabezpečíme přihlášení do routeru a příkaz `enable` opatříme heslem
-#Praxe:
+# Praxe:
 **1) Pokládání routerů**
 Položíme routery **1841**, do routerů na obrázku popsaných jako **Router0 a Router2** připojíme modul `WIC-1-ENET` - Tím pak připojíme routery ke zbytku sítě
 Pomocí blesku propojíme kabely
