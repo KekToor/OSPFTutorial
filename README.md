@@ -107,5 +107,35 @@ Pak určíme, které IP adresy může používat (*první příkaz*) a povolíme
   ip nat inside source list int e0/0/0
 ```
 
+## **6) Nastavení SSH, zabezpečení řídícího routeru**
 
+Nejprve nastavíme hesla na SSH, enable, a konzoli:
 
+```
+  username cisco password cisco (nastaví uživatelské jméno a heslo)
+  enable secret cisco (nastaví heslo k režimu ena)
+  service password-encryption (zašifruje heslo)
+```
+
+Pak tyto hesla zapneme pro SSH a Konzoli:
+
+```
+  line con 0
+  login local
+  line vty 0 15
+  login local
+```
+
+Pak nastavíme SSH:
+
+```
+  hostname Gru
+  ip domain-name blog.iservery.com
+  crypto key generate rsa
+  (nějaký text s délkou klíče): 2048
+  ip ssh version 2
+  line vty 0 15
+  transport input ssh
+```
+
+# **A je hotovo! Díky za pozornost!**
