@@ -17,3 +17,19 @@
 **5)** Na routeru vedoucím do serveru nastavíme NAT
 
 **6)** Na routeru vedoucím do serveru nastavíme SSH, zabezpečíme přihlášení do routeru a příkaz `enable` opatříme heslem
+#Praxe:
+**1) Pokládání routerů**
+Položíme routery **1841**, do routerů na obrázku popsaných jako **Router0 a Router2** připojíme modul `WIC-1-ENET` - Tím pak připojíme routery ke zbytku sítě
+Pomocí blesku propojíme kabely
+**2) Nastavování IP adres**
+Dle zadání nastavujeme IP adresy na routerech
+Postupujeme tímto způsobem:
+```
+  ena
+  conf t
+  int (název interface, se kterým chceme pracovat, v našem případě máme na výběr z F0/0, F0/1 a E0/0/0 (případně E0/1/0)
+  ip add (požadovaná IP adresa) (požadovaná maska)
+  no sh
+```
+**Poslední 2 příkazy zopakujeme pro každý interface, přes které jsou prvky propojeny**
+> IP Cheat Sheet **ZDE:** [Cheat Sheet](https://www.freecodecamp.org/news/subnet-cheat-sheet-24-subnet-mask-30-26-27-29-and-other-ip-address-cidr-network-references/)
