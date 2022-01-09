@@ -155,3 +155,4 @@ Pak nastavíme SSH:
 > **Stejné nastavení funguje i pro 4 routery**
 
 # **A je hotovo! Díky za pozornost!**
+
