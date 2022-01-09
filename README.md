@@ -33,3 +33,8 @@ Postupujeme tímto způsobem:
 ```
 **Poslední 2 příkazy zopakujeme pro každý interface, přes které jsou prvky propojeny**
 > IP Cheat Sheet **ZDE:** [Cheat Sheet](https://www.freecodecamp.org/news/subnet-cheat-sheet-24-subnet-mask-30-26-27-29-and-other-ip-address-cidr-network-references/)
+
+**Nastavení Serveru/počítače a s ním souvisejícího routeru:**
+
+[Nastavení PC](./img/img2.png)
+[Nastavení Routeru](./img/img3.png)
