@@ -18,12 +18,12 @@
 
 **6)** Na routeru vedoucím do serveru nastavíme SSH, zabezpečíme přihlášení do routeru a příkaz `enable` opatříme heslem
 # Praxe:
-**1) Pokládání routerů**
+## **1) Pokládání routerů**
 
 Položíme routery **1841**, do routerů na obrázku popsaných jako **Router0 a Router2** připojíme modul `WIC-1-ENET` - Tím pak připojíme routery ke zbytku sítě
 Pomocí blesku propojíme kabely
 
-**2) Nastavování IP adres**
+## **2) Nastavování IP adres**
 
 Dle zadání nastavujeme IP adresy na routerech
 
@@ -54,7 +54,7 @@ Postupujeme tímto způsobem:
 
 ![Nastavení PC](./img/img5.png)
 
-**3) Nastavování OSPF**
+## **3) Nastavování OSPF**
 
 Na každém routeru se pomocí příkazu `network` ujistíme, že router zná všechny sítě, se kterými sousedí - jedinou výjimkou je propojení **Router-Server**, to do OSPF nepřidáváme
 
@@ -77,7 +77,7 @@ Pak přejdeme na Router0 a nastavíme **default gateway**
 
 Toto nastaví default gateway všem routerům
 
-**4) Pasivní rozhraní**
+## **4) Pasivní rozhraní**
 
 Stačí pouze vlézt na router připojený k pc a zadat příkazy:
 
@@ -86,7 +86,7 @@ Stačí pouze vlézt na router připojený k pc a zadat příkazy:
   passive-interface e0/0/0 (případně e0/1/0)
 ```
 
-**5) Nastavení NAT na řídícím routeru**
+## **5) Nastavení NAT na řídícím routeru**
 
 První nastavíme na routeru který interfaces jsou vnitřní a vnější (vnější = tam kde je internet, vnitřní = tam kde je naše síť)
 
