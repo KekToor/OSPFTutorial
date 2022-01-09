@@ -152,7 +152,7 @@ Pak nastavíme SSH:
 > 
 > **Pokud chcete zjistit, zda jsou sítě správně naroutované, použijte** `do sh ip route`
 >
-> **Stejné nastavení funguje i pro 4 routery**
+> **Stejné nastavení funguje i pro 4+ routerů**
 
 # **A je hotovo! Díky za pozornost!**
 
