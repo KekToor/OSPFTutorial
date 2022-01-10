@@ -50,7 +50,7 @@ Postupujeme tímto způsobem:
 
 ![Nastavení Routeru](./img/img3.png)
 
-**PC**
+**PC - ŠPATNÁ GATEWAY - Má tam být 10.0.0.129**
 
 ![Nastavení PC - ŠPATNÁ GATEWAY - má tam být 10.0.0.129](./img/img5.png)
 
