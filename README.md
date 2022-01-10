@@ -104,7 +104,7 @@ Pak určíme, které IP adresy může používat (*první příkaz*) a povolíme
 
 ```
   access-list 1 permit 10.0.0.0(network adresa sítě) 0.0.0.255(opačná (wildcard) maska sítě - v tomto případě pro 256 IP adres, A.K.A /24)
-  ip nat inside source list int e0/0/0
+  ip nat inside source list 1 int e0/0/0
 ```
 
 ## **6) Nastavení SSH, zabezpečení řídícího routeru**
