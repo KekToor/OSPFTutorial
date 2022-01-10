@@ -52,7 +52,7 @@ Postupujeme tímto způsobem:
 
 **PC**
 
-![Nastavení PC](./img/img5.png)
+![Nastavení PC - ŠPATNÁ GATEWAY - má tam být 10.0.0.129](./img/img5.png)
 
 ## **3) Nastavování OSPF**
 
